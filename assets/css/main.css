@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 300;
+    src: url(../fonts/Montserrat/Montserrat.ttf);
+}
+@font-face {
+    font-family: "Montserrat_bold";
+    font-weight: 500;
+    src: url(../fonts/Montserrat/Montserrat.ttf);
+}
+
+.home {
+    font-family: "Montserrat";
+    background-color: black;
+    color: white;
+}
+.home .main_title {
+    font-family: "Montserrat_bold";
+    animation: fading 10s infinite; 
+}
+
+@keyframes fading {
+    0% {
+        filter: opacity(1);
+        transform: translateY(0em) scale(1);
+    }
+    50% {
+        filter: opacity(0.4);
+        transform: rotate(2deg) translateY(0.4em) scale(0.8);
+    }
+
+    100% {
+        filter: opacity(1);
+        transform: translateY(0em) scale(1);
+    }
+}
