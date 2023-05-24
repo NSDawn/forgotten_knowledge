@@ -19,6 +19,16 @@
     animation: fading 10s infinite; 
 }
 
+/* For images */
+img {
+  image-rendering: pixelated;
+}
+
+/* For scaled elements */
+.element {
+  image-rendering: crisp-edges;
+}
+
 @keyframes fading {
     0% {
         filter: opacity(1);
@@ -33,6 +43,39 @@
         filter: opacity(1);
         transform: translateY(0em) scale(1);
     }
+}
+
+.centering_wrapper {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.living_room.image_wrapper {
+    width: 50vw;
+
+}
+.living_room.image_wrapper > img {
+    width: 100%
+}
+
+.living_room.button {
+    font-family: "Montserrat_bold";
+    font-size: 24px;
+    border-radius: 5px;
+    padding: 0.25em;
+    margin: 0.25em;
+    color: white;
+    text-shadow: 0 0 5px rgb(65, 5, 75);
+    background-color: rgb(110, 5, 128);
+    border: none;
+    outline: white solid 2px;
+}
+.living_room.button:hover {
+    transform: scale(1.1) translateY(2px);
+    box-shadow: 0 0 20px white;
 }
 
 .loader {
