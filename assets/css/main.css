@@ -8,6 +8,11 @@
     font-weight: 500;
     src: url(../fonts/Montserrat/Montserrat.ttf);
 }
+@font-face {
+    font-family: "ReenieBeanie";
+    font-weight: 500;
+    src: url(../fonts/Reenie_Beanie/ReenieBeanie-Regular.ttf);
+}
 
 .home {
     font-family: "Montserrat";
@@ -63,6 +68,7 @@ img {
 
 .living_room.button {
     font-family: "Montserrat_bold";
+    
     font-size: 24px;
     border-radius: 5px;
     padding: 0.25em;
@@ -75,6 +81,7 @@ img {
 }
 .living_room.button:hover {
     transform: scale(1.1) translateY(2px);
+    
     box-shadow: 0 0 20px white;
 }
 
@@ -95,7 +102,7 @@ img {
 
 .fact_popup {
 
-
+    z-index: 3;
     display: block;
     position: fixed;
     width: clamp(400px, 50vw, 550px);
@@ -149,4 +156,9 @@ img {
 }
 .popup_image_wrapper > img {
     width: 50%;
+}
+
+.handwritten {
+    font-family: 'ReenieBeanie';
+    font-size: 150%;
 }
