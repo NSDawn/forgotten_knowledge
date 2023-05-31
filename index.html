@@ -8,6 +8,10 @@
     
     <!-- LINKING CSS AND JS -->
     <link rel="stylesheet" href="assets/css/main.css">
+    
+    <script type="text/javascript" src="assets/lib/p5.min.js" defer></script>
+    <script type="text/javascript" src="assets/lib/utilities.js" defer></script>
+    
     <script type="text/javascript" src="assets/js/main.js" defer></script>
 
 </head>
@@ -16,16 +20,20 @@
     <div class="popup_wrapper">
         <div class="popup_bg"></div>
         <div class="fact_popup"> 
-            <button class="close_fact_popup">X</button>
-            <h1>
-                bingus wingus
-            </h1>
-            <div class="popup_image_wrapper">
-                <img src="assets/img/living_room/line.png" alt="placeholder img">
+            <img src="assets/img/living_room/notepage.png" alt="">
+            <div class="content">
+                <button class="close_fact_popup">X</button>
+                <h1>
+                    bingus wingus
+                </h1>
+                <div id="p5Canvas"></div>
+                <div class="popup_image_wrapper">
+                    <img src="assets/img/living_room/line.png" alt="placeholder img">
+                </div>
+                <p class="handwritten">
+                    I blinked awake in my chair and I forgot how I got here but something tells me to check out that table over there
+                </p>
             </div>
-            <p class="handwritten">
-                I blinked awake in my chair and I forgot how I got here but something tells me to check out that table over there
-            </p>
         </div>
     </div>  
 

@@ -100,24 +100,42 @@ img {
 }
 
 
-.fact_popup {
 
+.fact_popup {
     z-index: 3;
     display: block;
     position: fixed;
-    width: clamp(400px, 50vw, 550px);
-    height: 60vh;
+    width: clamp(300px, 30vw, 600px);
+    color: black;
+    text-shadow: #777777 0px 0px 5px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius: 5px;
-    box-shadow: 0 0 200px black;
-    background-color: #373737;
     padding: 1em; 
+    display: inline-grid;
+}
+
+.fact_popup > img {
+    grid-row: 1; grid-column: 1;
+    width: 100%;
+}
+
+.fact_popup > .content {
+    grid-row: 1; grid-column: 1;
+    padding: 1em;
+    width: auto;
+}
+
+.fact_popup > .content > p {
+    padding: 1em 1em;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: rgba(255, 255, 255, 0.5) 0px 0px 10px;
+    outline: black dashed 2px;
+    border-radius: 5px;
 
 }
 
-.fact_popup > .close_fact_popup {
+.close_fact_popup {
     font-family: inherit;
     width: 3em;
     height: 3em;
@@ -130,11 +148,13 @@ img {
     border-radius: 50%;
     padding: 0.5em;
 }
-.fact_popup > .close_fact_popup:hover {
+.close_fact_popup:hover {
     box-shadow: 0 0 20px black;
     background-color: rgb(232, 73, 73);
 
 }
+
+
 
 .popup_wrapper {
     display: block;
@@ -161,4 +181,9 @@ img {
 .handwritten {
     font-family: 'ReenieBeanie';
     font-size: 150%;
+}
+
+#p5Canvas {
+    width: 400px;
+    height: 400px;
 }
