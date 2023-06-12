@@ -71,7 +71,7 @@ img {
     
     font-size: 24px;
     border-radius: 5px;
-    padding: 0.25em;
+    padding: 0.25em 1em;
     margin: 0.25em;
     color: white;
     text-shadow: 0 0 5px rgb(65, 5, 75);
@@ -122,27 +122,28 @@ img {
 
 .fact_popup > .content {
     grid-row: 1; grid-column: 1;
-    padding: 1em;
+    padding: 0em 0.5em;
     width: auto;
 }
 
 .fact_popup > .content > p {
-    padding: 1em 1em;
+    padding: 0.5em 0.5em;
     background-color: rgba(255, 255, 255, 0.5);
     box-shadow: rgba(255, 255, 255, 0.5) 0px 0px 10px;
     outline: black dashed 2px;
     border-radius: 5px;
-
+    overflow: scroll;
+    max-height: 5em;
 }
 
 .close_fact_popup {
     font-family: inherit;
-    width: 3em;
-    height: 3em;
+    width: 2em;
+    height: 2em;
     text-align: center center;
     float: right;
     position: relative;
-    transform: translateX(5em) translateY(-5em) ;
+    
     background-color: rgb(169, 14, 1);
     border: none;
     border-radius: 50%;
@@ -178,12 +179,14 @@ img {
     width: 50%;
 }
 
+.fact_title {
+    padding: 0em 1em;
+}
 .handwritten {
     font-family: 'ReenieBeanie';
     font-size: 150%;
 }
 
-#p5Canvas {
-    width: 400px;
-    height: 400px;
+#p5Canvas > canvas {
+    outline: 2px white solid;
 }
