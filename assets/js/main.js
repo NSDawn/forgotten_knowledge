@@ -1,7 +1,7 @@
 // ------PURE JAVASCRIPT!!!------------------------
 
 var day_num = 1; 
-var time_of_day = 'day'
+var time_of_day = 'day';
 var isShowingFact = false;
 
 const FACT_CONTENT = document.getElementsByClassName('fact_content')[0]
@@ -14,6 +14,10 @@ CHANGE_TIME_BUTTON.addEventListener("click", function() {
     objectHovering = 'room';
     showFact();
     advanceTime();
+    if (day_num == 5 && time_of_day == "day") {
+        day_num = 1;
+        time_of_day = "day";
+    }
 });
 
 // onload, remove the loading animation
@@ -399,7 +403,7 @@ const FACT_SCRIPT = {
             "meds": "Medication||The outside world, quiet and distant, could hardly touch you. There are moments when you hear or see something that brings you back but it’s only for a moment. No matter how much I tried to swim I was still stuck adrift, to the point where I couldn’t tell what was up or down, what was real or not. Flashes of light and color come into sight now and then, which may be the present or only a memory of the past. It’s hard to tell now. The string that tethers me down to the land of the living is thin yet I still hold on, hoping that I could at least see someone again even if I don’t remember who they are anymore.",
 
             "room": "Last Journal Entry||Experiencing Alzheimer's is like swimming in water. It was easier at first, all your muscles work as you swim across the watery sea, but then it gets harder. You’re moving slower and there are moments when it gets darker and harder to breathe, as your vision gets more and more blurry. There are moments when you could see and catch your breath but the more you swim the harder it is, it feels like the water is thicker like a swamp-like consistency. And then the next thing you know, you’re just floating in the water, you’re not sinking or floating up, you're just there, just suspended. That’s how it is, living with this disease when it comes to the mind and memory. This is the life I live, this is the space I’m in, just floating in water and space.",
-        }
+        },
 
     },
 }
