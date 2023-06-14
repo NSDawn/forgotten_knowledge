@@ -127,7 +127,9 @@ function draw() {
     objectHovering = 'room';
     for (let obj in OBJ_BOUNDING_BOXES) {
         // disable while a pop up window is up
-        if (isShowingFact) break;
+        if (isShowingFact) {break;}
+        // continue if there is no fact
+        if (FACT_SCRIPT[day_num][time_of_day][obj] == null) {continue;}
         // else go through all the bounding boxes
         if (cursor_pos.isWithin(OBJ_BOUNDING_BOXES[obj][0].scaled(SCALE), OBJ_BOUNDING_BOXES[obj][1].scaled(SCALE))) {
             objectHovering = obj;
@@ -263,6 +265,9 @@ function mouseClicked() {
             return true;  
     }
 
+
+    // change the mouse cursor depending on if you're hovering over something.
+    CANVAS.style.cursor == objectHovering !== "room" ? 'default' : 'pointer'
 }
 
 // reset canvas size dynamically, keeping it with the CSS calculated size.

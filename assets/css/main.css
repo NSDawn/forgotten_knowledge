@@ -42,6 +42,7 @@ img {
     50% {
         filter: opacity(0.4);
         transform: rotate(2deg) translateY(0.4em) scale(0.8);
+        text-shadow: 0 0 5px white;
     }
 
     100% {
@@ -74,8 +75,8 @@ img {
     padding: 0.25em 1em;
     margin: 0.25em;
     color: white;
-    text-shadow: 0 0 5px rgb(65, 5, 75);
-    background-color: rgb(110, 5, 128);
+    text-shadow: 0 0 5px rgb(72, 62, 4);
+    background-color: rgb(127, 109, 18);
     border: none;
     outline: white solid 2px;
 }
@@ -189,4 +190,8 @@ img {
 
 #p5Canvas > canvas {
     outline: 2px white solid;
+}
+
+.desc {
+    padding: 1em;
 }
